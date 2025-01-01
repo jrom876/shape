@@ -20,8 +20,8 @@ class Shape {
         double foci = 0;
 
     public:
-        virtual double getArea(double,double) {return width * height;}
-        virtual double getVolume(double,double,double) {return length * width * height;}
+        double getArea(double,double) {return width * height;}
+        double getVolume(double,double,double) {return length * width * height;}
         void setValues(double w, double h) {width = w; height = h;}
         void setValues(double len, double w, double h) {length = len; width = w; height = h;}
         void setLength(double len) {length = len;}
